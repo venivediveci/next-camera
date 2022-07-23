@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+#__next {
+  overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +28,43 @@ a {
     color: white;
     background: black;
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: lavender;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: hotpink;
+}
+
+.main {
+  background: hotpink;
+  padding: 50px;
+  border-radius: 4px;
+  display: flex;
+  margin: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+a {
+  color: white;
+  display: block;
+  text-decoration: unset;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+a:hover {
+  color: #3f51b5;
 }
